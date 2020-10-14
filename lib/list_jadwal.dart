@@ -15,11 +15,11 @@ class ListJadwal extends StatelessWidget {
         height: 70.0,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10.0),
-          boxShadow: [BoxShadow(color: Colors.grey, blurRadius: 5.0)],
+          boxShadow: [BoxShadow(color: Colors.black, blurRadius: 2.0)],
           gradient: LinearGradient(
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
-            colors: [Color(0xff808080), Color(0xff3fada8)],
+            colors: [Color(0xff455a64), Color(0xff006064)],
           ),
         ),
         child: Row(
@@ -47,6 +47,8 @@ class ListJadwal extends StatelessWidget {
             data.results.datetime[0].times.Maghrib.toUpperCase(), 'Maghrib'),
         containerWaktu(
             data.results.datetime[0].times.Isha.toUpperCase(), 'Isya'),
+        containerWaktu(
+            data.results.datetime[0].times.Midnight.toUpperCase(), 'Midnight'),
       ],
     );
   }

@@ -32,7 +32,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
   @override
   void initState() {
     if (_locationController.text.isEmpty || _locationController.text == null) {
-      _locationController.text = 'Palangkaraya';
+      _locationController.text = 'Cikarang';
     }
     super.initState();
   }
@@ -56,7 +56,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
               image: DecorationImage(
                   fit: BoxFit.cover,
                   image: NetworkImage(
-                      "https://i.pinimg.com/originals/f6/4a/36/f64a368af3e8fd29a1b6285f3915c7d4.jpg"))),
+                      "https://dmikalteng.org/frontend/img/lp/imac.png"))),
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
